@@ -215,26 +215,6 @@ mouseMoved=true;
 
 document.getElementById("subscribeBtn").addEventListener("click",function(e){
 
-e.preventDefault();
-
-let timeSpent=(Date.now()-startTime)/1000;
-
-if(timeSpent>4 && scrolled && mouseMoved){
-
-if(typeof fbq!=="undefined"){
-fbq('track','Lead');
-}
-
-setTimeout(function(){
-window.location.href=whatsappLink;
-},300);
-
-}else{
-
-alert("Please explore the page before joining.");
-
-}
-
 });
 
 </script>
